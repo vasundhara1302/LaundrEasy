@@ -28,7 +28,7 @@ export const InfoRow = styled.div`
     imgStart ? `'col2 col1'` : `'col1 col2'`};
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
-      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+    imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
@@ -56,7 +56,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${({ lightText }) => (lightText ? "#1F4287" : "#1F4287")};
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
@@ -67,7 +67,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: ${({ darkText }) => (darkText ? "#1F4287" : "#fff")};
 `;
 
 export const BtnWrap = styled.div`
@@ -86,7 +86,7 @@ export const Img = styled.img`
   padding-right: 0;
 `;
 
-export const InfoH1 = styled.h1`
+export const InfoH1 = styled.div`
   max-width: 440px;
   margin-top: 35px;
   font-size: 2.5rem;

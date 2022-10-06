@@ -2,13 +2,12 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
-  background: #CCEEF5;
+  background: #fff;
   display: flex;
-  flex-direction: row;
   justify-content: left;
   align-items: center;
   padding: 0 30px;
-  height: 700px;
+  height: 650px;
   position: relative;
   z-index: 1;
   :before {
@@ -22,28 +21,17 @@ export const HeroContainer = styled.div`
   }
 `;
 
-export const HeroBg = styled.div`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-`;
-
 export const HeroContent = styled.div`
-  z-index: 3;
+  z-index: 10;
   max-width: 500px;
-  position: absolute;
+  ${'' /* position: absolute; */}
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 export const HeroH1 = styled.h1`
-  color: #E48340;
+  color: #1F4287;
   font-size: 48px;
   text-align: center;
   @media screen and (max-width: 768px) {
@@ -56,7 +44,7 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
   margin-top: 24px;
-  color: #E48340;
+  color: #1F4287;
   font-size: 24px;
   text-align: center;
   max-width: 600px;

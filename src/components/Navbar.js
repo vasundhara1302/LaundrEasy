@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
   AppBar,
-//   Button,
+  //   Button,
   Tab,
   Tabs,
   Toolbar,
@@ -20,12 +20,12 @@ const Navbar = () => {
 
   return (
     <React.Fragment>
-      <AppBar sx={{ background: "#40B6B5" }}>
+      <AppBar sx={{ background: "#278EA5" }}>
         <Toolbar>
           <LocalLaundryServiceIcon sx={{ transform: "scale(2)" }} />
-            <Typography sx={{ fontSize: "2rem", paddingLeft: "2%" }}>
-                LaundrEasy
-            </Typography>
+          <Typography sx={{ fontSize: "2rem", paddingLeft: "2%" }}>
+            LaundrEasy
+          </Typography>
           {isMatch ? (
             <>
               <DrawerComp />
@@ -60,3 +60,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
